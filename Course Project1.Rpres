@@ -1,0 +1,38 @@
+Data Products- Course Project
+========================================================
+author: Jayanthi Sastry
+date: 06/11/2016
+transition: rotate
+
+Introduction
+========================================================
+
+This presentation is part of Developing Data Products Course Project. This assignment has two parts.The first step is to create a Shiny Application and deploy it on RStudio's servers. The second one is to use RStudio Presenter or Slidify to prepare a reproducible pitch presentation about the application.
+
+App developed for the first part of the assignment is available at:
+
+https://sastry97.shinyapps.io/MTCARS-Best_Mileage_Car/
+
+
+Source Code for ui.R and server.R are available on the Github:
+https://github.com/jayanthisastry/
+
+Best Mileage Car based on mtcars dataset
+========================================================
+MTCARS data was extracted from Motor Trend US Magazine. This dataset consists of 11 variables that determines the best car. In this project, we are interested in 3 sets of variables to determine the car that gives the best mileage per gallon. User has the option to enter Transmission Type(Automatic or Manual), Horse Power and Number of Cylinders(4, 6 or 8). 
+Based on the above data entered, the summary for miles per gallon is calculated.
+
+Display all the variables in mtcars dataset
+========================================================
+```{r}
+head(mtcars)
+```
+
+
+MTCARS Summary
+========================================================
+```{r}
+summary(mtcars)
+```
+
+
