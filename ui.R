@@ -14,9 +14,17 @@ shinyUI(
       ),
     
     mainPanel(
-      h3("Miles Per gallon calculation based on HP and number of cylinders"),
-      h4('Miles Per Gallon Summary:'),
-      verbatimTextOutput("mpg_data")  
-    )
+      tabsetPanel(
+        tabPanel("MPG Summary",
+                 mainPanel(
+                   h3("Miles Per gallon calculation based on HP and number of cylinders"),
+                   verbatimTextOutput("mpg_data")
+                 )
+                ),
+         tabPanel("About",
+                 mainPanel(includeMarkdown("README.md"))
+                 )
+        )
+      )
   )
 )
